@@ -1,4 +1,4 @@
-<img align="left" alt="" src="./img/feo-math-logo.png" height="125" />
+<img align="left" alt="" src="./img/feo-math-logo.png" height="155" />
 
 # [FeO Math](https://github.com/littleTitan/feo-math) <!-- (https://feo-math.rs) -->
 
