@@ -4,7 +4,20 @@ version = "0.1.0"
 authors = ["LittleTitan"]
 edition = "2018"
 
-[dependencies]
+description = "Math library for 3D transformation."
+documentation = "https://docs.rs/feo-math"
+repository = "https://github.com/littleTitan/feo-math"
+readme = "./README.md"
 
-[profile.release]
-debug = true
+keywords = ["math", "feo", "linear", "algebra", "rotation"]
+categories = [
+    "mathematics",
+    "game-development",
+    "graphics",
+    "cryptography",
+    "data-structures"
+]
+
+license = "MIT"
+
+# No dependencies

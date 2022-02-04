@@ -1,3 +1,20 @@
+//! Space a construct for storing everything about how an object is to be transformed.
+//! 
+//! A space is an area in which objects, such as spaces or the vertices of a mesh, can exist. 
+//! An issue with this visualization is however that the area itself is unlimited in size. If 
+//! a space is translated, rotated, or scaled the objects within it do not change their 
+//! position, rotation, or scaling relative to the space. Their position relative to the space
+//!  containing that space however will change. 
+//!
+//! > Spaces can also be joined to represent conversions between spaces.
+//!
+//! Standard examples of spaces include:
+//!  + Worldspace : The space in which all objects exist without their own space and any spaces containing their own space.
+//!  + Viewspace : The space the viewer perceives viewed objects in
+//!  + Cameraspace : The position relative to the camera. NOT the viewspace.
+//!  + Objectspace : every game-object has its own space
+//!
+//! 
 use std::ops::{Add, Sub};
 
 use crate::{Zero, linear_algebra::{

@@ -1,3 +1,8 @@
+//! Construct that represents euler rotations.
+//! 
+//! Very simple but flawed.
+//! TODO
+//! 
 use std::{fmt, ops::{Add, Div, Mul, Neg, Rem, Sub}};
 
 use crate::{Construct, F32Fmt, One, SignOps, /*Sum,*/ Two, Zero, axes::Axes, linear_algebra::{matrix3::Matrix3, vector3::Vector3}};

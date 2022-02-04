@@ -1,6 +1,8 @@
+//! multivariate operations 
+//! 
 //! Unstable
 //! TODO: compress down into one construct
-//! multivariate operations 
+//! 
 
 
 pub mod with_var;

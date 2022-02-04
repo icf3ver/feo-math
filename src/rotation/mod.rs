@@ -1,4 +1,4 @@
-//! Ways to represent a rotation
+//! Constructs for representing rotation in 3D space
 
 use crate::{One, Zero, axes::Axes, linear_algebra::vector3::Vector3};
 

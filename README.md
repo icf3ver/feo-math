@@ -12,7 +12,7 @@ see also: [feo-oop-engine](https://github.com/littleTitan/feo-oop-engine)
 
 > Feo Math is a library I created to help me learn linear algebra and spacial rotation. This is my own undertaking through and through.
 
-Feo Maths intended purpose was to serve as the math library for the [feo-oop-engine](https://github.com/littleTitan/feo-oop-engine) a 3D engine made with rust.
+Feo Math's intended purpose was to serve as the math library for the [feo-oop-engine](https://github.com/littleTitan/feo-oop-engine) a 3D engine made with rust. It has no dependencies.
 
 ## Structure
 Within the crate there are the following useful modules:

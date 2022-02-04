@@ -1,5 +1,3 @@
-//! Basic linear algebra constructs
-
 use {
     crate::Construct,
     std::ops::Mul

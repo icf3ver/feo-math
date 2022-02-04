@@ -1,3 +1,9 @@
+//! Light implementations for imaginary numbers 
+//! 
+//! Quaternions are under rotations.
+//! 
+//! TODO
+//! 
 use std::ops::{Add, Div, Mul, Neg, Sub};
 
 use crate::{F32Fmt, One, SignOps, Three, Two, Zero};

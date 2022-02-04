@@ -1,8 +1,12 @@
+//! Construct that represents a rotor.
+//! 
+//! TODO
+//! 
 use crate::{Construct, One, Two, Zero, axes::Axes, linear_algebra::{matrix3::Matrix3, vector3::Vector3}};
 
 use super::{Rotation, euler::Euler, quaternion::Quaternion};
 
-/// Uses the same principles as quaternions to arrive at the same result in a fashion that is easier to understand
+/// TODO
 pub struct Rotor<T>(pub T, pub T, pub T, pub T);
 
 impl<T> Rotor<T> {

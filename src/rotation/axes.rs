@@ -1,3 +1,7 @@
+//! You can represent a rotation through the rotation of axes.
+//! 
+//! TODO: explain
+//! 
 use std::{fmt, ops::{Add, Div, Mul, Neg, Sub}};
 use crate::{F32Fmt, One, Two, Zero, linear_algebra::{matrix3::Matrix3, vector3::Vector3}, rotation::quaternion::Quaternion};
 

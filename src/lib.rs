@@ -1,3 +1,11 @@
+//! ## Feo Math
+//! > Feo Math is a library I created to help me learn about linear algebra and 
+//! spacial rotation.
+//!
+//! Feo Math's intended purpose was to serve as the math library for the 
+//! [feo-oop-engine](https://github.com/littleTitan/feo-oop-engine) a 3D 
+//! engine made with rust. It has no dependencies.
+//! 
 use std::{fmt, ops::{Add, Div, Mul, Neg, Rem, Shl, Shr, Sub}};
 
 pub mod multivariate;
@@ -9,6 +17,7 @@ pub mod utils; // unfinished move forward
 
 pub use rotation::axes;
 
+/// Implemented by all constructs of this library.
 pub trait Construct<T>: fmt::Debug + Copy + Clone + PartialEq // Is typed
     + Add<Self, Output = Self> + Add<T, Output = Self>
     + Sub<Self, Output = Self> + Sub<T, Output = Self> 
@@ -20,6 +29,7 @@ pub trait Construct<T>: fmt::Debug + Copy + Clone + PartialEq // Is typed
     + F32Fmt {}
 
 /// This trait allows you to set requirements for Types of typed Constructs in groups.
+/// 
 /// TODO explain + example + fix issue note primitive
 pub trait Typed<T> {} // A concept 
 impl<T: Construct<A>, A> Typed<T> for A {} // Note that when no longer typed typed is set to the last type.
@@ -223,6 +233,7 @@ impl SignOps for u128 { #[inline] fn ptcopysign(self, _: Self) -> Self { self } 
 impl SignOps for usize { #[inline] fn ptcopysign(self, _: Self) -> Self { self } #[inline] fn ptsignum(self) -> i8 { if self != 0_usize { 1_i8 } else { 0_i8 } } #[inline] fn abs(self) -> Self { self } }
 impl SignOps for bool { #[inline] fn ptcopysign(self, sign: Self) -> Self { sign } #[inline] fn ptsignum(self) -> i8 { if self { 1_i8 } else { 0_i8 } } #[inline] fn abs(self) -> Self { false } }
 
+/// All numerical primitives and bool
 pub trait Primitive {}
 impl Primitive for f32 {}
 impl Primitive for f64 {}

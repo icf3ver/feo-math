@@ -548,9 +548,11 @@ where T: Add<T, Output = T> + Mul<T, Output = T> + Copy {
 
     /// Matrix<T> * Vector3<T>
     /// = Vector3<T>
+    /// ```text, no_run
     /// [r0c0, r0c1, r0c2]   [x]   [x']
     /// [r1c0, r1c1, r1c2] * [y] = [y']
     /// [r2c0, r2c1, r2c2]   [z]   [z']
+    /// ```
     /// # Examples
     /// ```rust
     /// use feo_math::linear_algebra::vector3::Vector3;

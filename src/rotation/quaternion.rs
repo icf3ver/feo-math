@@ -1,3 +1,7 @@
+//! Construct that represents a quaternion.
+//! 
+//! TODO
+//! 
 use std::{fmt, ops::{Add, Div, Mul, Neg, Rem, Sub}};
 
 use crate::{Construct, F32Fmt, One, /* Product ,*/ SignOps, Two, Zero, axes::{self, Axes}, imaginary::ImaginaryConstruct, linear_algebra::{
