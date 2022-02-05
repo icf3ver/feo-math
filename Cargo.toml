@@ -2,7 +2,7 @@
 name = "feo-math"
 version = "0.1.0"
 authors = ["LittleTitan"]
-edition = "2018"
+edition = "2021"
 
 description = "Math library for 3D transformation."
 documentation = "https://docs.rs/feo-math"
